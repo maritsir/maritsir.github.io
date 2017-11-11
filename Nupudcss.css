@@ -1,0 +1,63 @@
+.fill:hover, .fill:focus {
+  box-shadow: inset 0 0 0 2em var(--hover);
+}
+.pulse:hover, .pulse:focus {
+
+  box-shadow: inset 0 0 0 2em var(--hover);
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+.close:hover, .close:focus {
+  box-shadow: inset 0 0 0 2em var(--hover);
+}
+
+.fill {
+  --color: #25BF2A;
+  --hover: #2FBF33;
+}
+.pulse {
+  --color: #FFB217;
+  --hover: #FFC03F;
+}
+.close {
+  --color: #F36060;
+  --hover: #EE4F4F;
+}
+
+button {
+  color: var(--color);
+  transition: 0.25s;
+}
+button:hover, button:focus {
+  border-color: var(--hover);
+  color: #fff;
+}
+body {
+  color: #fff;
+  //background: #17181c;
+  font: 300 1em 'Fira Sans', sans-serif;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+}
+button {
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+}
+h1 {
+  font-weight: 400;
+}
+code {
+  color: #e4cb58;
+  font: inherit;
+}
